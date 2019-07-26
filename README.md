@@ -34,7 +34,15 @@
 构建工具：webpack、create-react-app、eslint
 
 富文本编辑：{
-  react-draft-wysiwyg;
-  draft.js
+  react-draft-wysiwyg、
+  draft.js、
   draftjs-to-html
 }
+组件按需加载:react-app-rewired customize-cra babel-plugin-import;
+
+前端路由：{
+  登录的路由组件：login、
+  管理路由组件:admin
+}
+
+
