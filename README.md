@@ -46,3 +46,10 @@
 }
 dev分支：git checkout -b dev origin/dev; git pull origin dev
 
+
+
+添加两个工具：{
+ merroyUtifs------持久存储 如果内存中没有user=====>当前没有登录  return <Redirect to='/login' />
+ storgeUtifs------store库本地永久存贮相当于localstorge;
+
+}
