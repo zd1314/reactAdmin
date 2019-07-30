@@ -44,5 +44,5 @@
   登录的路由组件：login、
   管理路由组件:admin
 }
-
+dev分支：git checkout -b dev origin/dev; git pull origin dev
 
