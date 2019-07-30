@@ -53,3 +53,9 @@ dev分支：git checkout -b dev origin/dev; git pull origin dev
  storgeUtifs------store库本地永久存贮相当于localstorge;
 
 }
+/*
+withRouter 高阶组件
+包装非路由组件，返回一个新的组件
+新的组件向非路由组件传递3个参数  history/location/match
+*/
+

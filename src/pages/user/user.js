@@ -1,0 +1,10 @@
+//用户管理
+
+import React from 'react';
+export default class User extends React.Component {
+  render() {
+    return (
+      <div>用户管理</div>
+    )
+  }
+}

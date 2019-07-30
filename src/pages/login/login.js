@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom'
 import './login.less';
-import logo from './logo.jpg'
+import logo from '../../assets/img/logo.jpg';
 import {
   Form,
   Icon,
