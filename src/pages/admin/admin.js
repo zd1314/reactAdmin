@@ -9,6 +9,7 @@ import merroyUtifs from '../../utifs/merroryUtifs';
 import LeftNav from '../../components/left-nav/left-nav';
 import Header from '../../components/header/header';
 import Router from '../../router/router';
+import api from '../../api/apiBuild';
 const { Footer, Sider, Content } = Layout;
 export default class Login extends Component {
   render() {
@@ -25,7 +26,7 @@ export default class Login extends Component {
         </Sider>
         <Layout>
           <Header></Header>
-          <Content style={{ background: '#fff' }}>
+          <Content style={{ margin:20,background: '#fff' }}>
            < Router></Router>
           </Content>
           <Footer style={{textAlign:'center',color:'#ccc'}}>Ant Design ©2018 Created by Ant UED</Footer>
