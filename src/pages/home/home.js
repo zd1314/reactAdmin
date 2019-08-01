@@ -4,7 +4,7 @@ import React from 'react';
 export default class Home extends React.Component {
   render() {
     return (
-      <div>首页</div>
+      <div class='home'>欢迎进入首页</div>
     )
   }
 }

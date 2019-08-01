@@ -8,12 +8,13 @@ import merroryutifs from '../../utifs/merroryUtifs';
 import storeutifs from '../../utifs/storgeUtifs';
 import menuList from '../../config/menuConfig';
 import { reqWeather } from '../../api/apiBuild';
+import LinkButtom from '../linkButton/linkButton';
 class Header extends React.Component {
   // eslint-disable-next-line no-useless-constructor
   constructor(props) {
     super(props);
     this.state = {
-      currentTime: formateData(Date.now()),
+      currentTime: formateData(Date.now()),//当前时间
       dayPictureUrl: '',//天气图片
       weather: ''//天气内容
     }
@@ -27,12 +28,14 @@ class Header extends React.Component {
       })
     }, 1000)
   }
-  //天气接口
+
+  //天气接口  jsonp接口（json插件）
   getWeather = async () => {
     //调用接口请求异步数据
     const { dayPictureUrl, weather } = await reqWeather('北京');
     this.setState({ dayPictureUrl, weather })
   }
+  
   //标题切换 
   getTitle = () => {
     const path = this.props.location.pathname;
@@ -50,8 +53,8 @@ class Header extends React.Component {
     })
     return title;
   }
-  //退出登录
 
+  //退出登录
   _clcikDialog = () => {
     Modal.confirm({
       content: '确定退出吗',
@@ -74,14 +77,16 @@ class Header extends React.Component {
 
   }
   render() {
-    const { currentTime, dayPictureUrl, weather } = this.state;
-    const username = merroryutifs.user.username;
-    const title = this.getTitle();
+    const { currentTime, dayPictureUrl, weather } = this.state;//天气
+
+    const username = merroryutifs.user.username;//应户名
+
+    const title = this.getTitle();//标题切换
+
     return <div className='header'>
       <div className='header-top'>
         <span>欢迎, {username} </span>
-       
-        <a href='javascript:' onClick={this._clcikDialog.bind(this)}>退出</a>
+        <LinkButtom onClick={this._clcikDialog.bind(this)}>退出</LinkButtom>
       </div>
       <div className='header-bottom'>
         <div className='header-bottom-left'>{title}</div>

@@ -25,13 +25,12 @@ export const reqWeather = (city) => {
       }
     })
 
-
   })
 }
 // reqWeahter('张家港')
 /*
 jsonp 只能解决get类型的ajax请求跨域问题
-jsonp请求不是ajax请求是一般的get请求
+jsonp请求不是ajax请求,是一般的get请求
 基本原理：
    浏览器端：
        动态生成<script>请求后台返回来的接口（src就是接口的url）
