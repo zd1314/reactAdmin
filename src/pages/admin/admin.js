@@ -9,7 +9,6 @@ import merroyUtifs from '../../utifs/merroryUtifs';
 import LeftNav from '../../components/left-nav/left-nav';
 import Header from '../../components/header/header';
 import Router from '../../router/router';
-import api from '../../api/apiBuild';
 const { Footer, Sider, Content } = Layout;
 export default class Login extends Component {
   render() {

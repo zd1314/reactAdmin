@@ -143,6 +143,7 @@ class Api {
       if (option.isFormData) {
         const keys = Object.keys(data);
         let _params = '';
+        // eslint-disable-next-line array-callback-return
         keys.map((t, i) => {
           if (i < 1)
             _params += [t, '=', data[t]].join('');

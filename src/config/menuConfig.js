@@ -34,17 +34,17 @@ const menuList = [
   {
     title: '图形图表',
     path: '/charts',
-    icon: 'shake',
+    icon: 'area-chart',
     children: [
       {
         title: '线图',
         path: '/charts/line',
-        icon: 'menu'
+        icon: 'line-chart'
       },
       {
         title: '饼图',
         path: '/charts/pie',
-        icon: 'tag'
+        icon: 'pie-chart'
       }
     ]
   },
